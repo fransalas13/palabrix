@@ -1,0 +1,59 @@
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont,Roleway, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Inicio {
+  text-align: center;
+  padding: 40px;
+  background-image: url(../../assets/img/fondo1.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  #Inicio .jumbotron {
+    padding: 28px;
+  }
+}
+
+#Inicio .jumbotron {
+  border-radius: 30px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.75);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  #Inicio .jumbotron {
+    padding: 20px;
+  }
+}
+
+.site-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#wellcome p {
+  max-width: 800px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.site-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.site-section h3 {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#logo {
+  max-height: 42px;
+  margin-right: 18px;
+  margin-top: -3px;
+  display: inline-block;
+}
+
