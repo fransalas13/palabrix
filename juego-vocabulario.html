@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
@@ -40,15 +41,66 @@
     </h1><br>
     <h2 class="text-center">Arrastra las imágenes en la caja que corresponda 😁</h2><br>
     <h4 class="text-center">También puesdes reprocucir los sonidos que hace cada animal 😯</h4><br>
-    <div class="animal1"></div>
-    <div class="animal2"></div>
-    <div class="animal3"></div>
-    <div class="animal4"></div>
-    <div class="animal5"></div><br>
-    <div class="text-center text-primary"><button class="btn btn-primary btn-lg" type="button" onclick="alert(&#39;¡Exelente! n/ ¡Puntaje Perfecto! n/ 1000 PUNTOS!!&#39;)">Listo</button></div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> <!--Columna 1-->
+            <label>?????</label>
+            <div class="animal1">
+              <img style="width: 120px; height: 120px;" src="assets/img/vaca.png" class="animal">
+              <audio src="assets/sound/vaca.mp3" controls="play"></audio>
+            </div>
+            <label>?????</label>
+            <div class="animal2">
+              <img style="width: 120px; height: 120px;" src="assets/img/cat.jpg" class="animal">
+              <audio src="assets/sound/gato.mp3" controls="play"></audio>
+            </div>
+            <label>?????</label>
+            <div class="animal3">
+              <img style="width: 120px; height: 120px;" src="assets/img/dog.png" class="animal">
+              <audio src="assets/sound/perro.mp3" controls="play"></audio>
+            </div>
+            <label>?????</label>
+            <div class="animal4">
+              <img style="width: 120px; height: 120px;" src="assets/img/mono.png" class="animal">
+              <audio src="assets/sound/mono.mp3" controls="play"></audio>
+            </div>
+          </div>
+          <br>
+          <div class="col-md-6">
+            <label >PERRO</label>
+            <div style="width: 130px;height: 130px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;"  class="caja" id="perro"></div>
+                    <audio src="assets/sound/perro-voz.mp3" controls="play"></audio>
+                    <br>
+
+            <label>VACA</label>
+            <div style="width: 130px;height: 130px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja" id="vaca"></div>
+                     <audio src="assets/sound/vaca-voz.mp3" controls="play"></audio>
+<br>
+            <label >MONO</label>
+            <div  style="width: 130px;height: 130px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;"  class="caja" id="mono"></div>
+                     <audio src="assets/sound/mono-voz.mp3" controls="play"></audio>
+<br>
+            <label>GATO</label>
+            <div style="width: 130px;height: 130px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;"  class="caja" id="gato"></div>
+                    <audio src="assets/sound/gato-voz.mp3" controls="play"></audio>
+          </div>
+        </div>
+</div>
+    </div>
+    </section>
+    <div class="text-center text-primary"><button class="btn btn-primary btn-lg" type="button" onclick="alert(&#39;¡Excelente! n/ ¡Puntaje Perfecto! n/ 1000 PUNTOS!!&#39;)">Listo</button></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script >
+     $( function() {
+$( ".animal" ).draggable();
+$(".caja").droppable();
+} );
+   </script>
 </body>
 
 </html>

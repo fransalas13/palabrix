@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Palabrix 0.0.1</title>
@@ -40,6 +41,43 @@
     </h1><br>
     <h2 class="text-center">Ordena las letras adecuadamente</h2><br><br>
     <section>
+       <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                  
+                    <label style="font-size: 34px;" class="silaba">E</label>
+                </div>
+                <div class="col-md-3">
+                  
+                    <label style="font-size: 34px;" class="silaba">MO</label>
+                </div>
+                <div class="col-md-2">
+                  
+                    <label style="font-size: 34px;" class="silaba">NA</label>
+                </div>
+                <div class="col-md-4">
+                  
+                    <label style="font-size: 34px;" class="silaba">RA</label>
+                </div>
+                <div class="col-md-1">
+                  
+                    <label style="font-size: 34px;" class="silaba">DO</label>
+                </div>
+            </div>
+        </div>
+              <div class="container">
+            <div class="row">
+                
+                  
+                    <label style="font-size: 34px;width: 70px;height: 70px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja"></label>
+                    <label style="font-size: 34px;width: 70px;height: 70px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja"></label>
+                    <label style="font-size: 34px;width: 70px;height: 70px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja"></label>
+                    <label style="font-size: 34px;width: 70px;height: 70px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja"></label>
+                    <label style="font-size: 34px;width: 70px;height: 70px;background-color: white; border-top: 3px dotted green;border-right: 3px dotted green;border-bottom: 3px dotted green;border-left: 3px dotted green;" class="caja"></label>
+                
+            </div>
+        </div>    
+
         <div class="text-center"><img src="assets/img/enamorado.png" width="450px"></div>
         <div id="divpalabradesordenada"></div>
     </section>
@@ -47,6 +85,13 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script >
+     $( function() {
+$( ".silaba" ).draggable();
+$(".caja").droppable();
+} );
+   </script>
 </body>
 
 </html>
